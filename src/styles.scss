@@ -1,0 +1,21 @@
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("./assets/images/south-miami-hospital-3-.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+app-root {
+    height: 100%;
+    width: 100%;
+}
+
+$sizes: (
+    17: 17%,
+    20: 20%,
+    60: 60%
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
