@@ -14,8 +14,10 @@ app-root {
 
 $sizes: (
     17: 17%,
+    19: 19%,
     20: 20%,
-    60: 60%
+    60: 60%,
+    80: 80%
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
