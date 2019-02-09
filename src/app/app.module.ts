@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { AuthenticatorSelectionPanelComponent } from './authenticator-selection-panel/authenticator-selection-panel.component';
 import { PasswordPanelBaseComponent } from './password/password-panel-base/password-panel-base.component';
 import { ProxPanelBaseComponent } from './prox/prox-panel-base/prox-panel-base.component';
@@ -14,7 +16,8 @@ import { ProxPanelBaseComponent } from './prox/prox-panel-base/prox-panel-base.c
     ProxPanelBaseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

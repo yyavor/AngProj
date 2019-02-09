@@ -1,6 +1,5 @@
+import { Router } from '@angular/router'
 import { Component, OnInit } from '@angular/core';
-
-declare function PyMethod(): any;
 
 @Component({
   selector: 'app-root',
@@ -10,9 +9,11 @@ declare function PyMethod(): any;
 export class AppComponent implements OnInit {
   title = 'PIEUI2';
 
+  constructor(private router: Router){
+  }
+
   ngOnInit() {
-    console.log("LOGGGGGG1");
-    PyMethod();
-    console.log("LOGGGGGG2");
+    //console.log("Routing to other page");
+    //this.router.navigateByUrl('/password-panel');
   }
 }
