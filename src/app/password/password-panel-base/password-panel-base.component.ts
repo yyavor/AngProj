@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./password-panel-base.component.scss'],
 })
 export class PasswordPanelBaseComponent implements OnInit {
+  header: string = "Enter Your Password"
 
   constructor() { }
 

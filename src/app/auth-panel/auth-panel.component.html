@@ -1,1 +1,11 @@
-<ng-container *ngComponentOutlet="real_pannel"></ng-container>
+<div class="shadow-lg container-fluid">
+        <div class="row">
+                <div class="col header-holder text-white"><span>Header {{real_pannel.header}}</span></div>
+                <div class="w-100"></div>
+                <div class="col content-holder">
+                    <div class="inline-block h-100">
+                        <ng-container *ngComponentOutlet="real_pannel"></ng-container>
+                    </div>
+                </div>
+        </div>
+</div>
