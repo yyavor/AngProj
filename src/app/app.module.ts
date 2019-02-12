@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgxComponentOutletModule } from 'ngx-component-outlet'
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +22,7 @@ import { FpPannelComponent } from './fp/fp-pannel/fp-pannel.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxComponentOutletModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

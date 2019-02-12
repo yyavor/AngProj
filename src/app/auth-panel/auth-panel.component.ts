@@ -12,6 +12,8 @@ export class AuthPanelComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("==============")
+    console.log(this.real_pannel)
   }
 
 }
