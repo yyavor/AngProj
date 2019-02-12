@@ -7,13 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AuthPanelComponent implements OnInit {
 
-  @Input() real_pannel: any;
+  @Input() real_component: any;
+  @Input() aval: string;
 
   constructor() { }
 
   ngOnInit() {
     console.log("==============")
-    console.log(this.real_pannel)
+    console.log(this.aval)
+    console.log(this.real_component)
   }
 
 }

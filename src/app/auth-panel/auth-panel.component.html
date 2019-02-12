@@ -1,10 +1,12 @@
 <div class="shadow-lg container-fluid">
         <div class="row">
-                <div class="col title-holder text-white"><span>Title</span></div>
+                <div class="col title-holder text-white">
+                  <span>{{aval}}</span>
+                </div>
                 <div class="w-100"></div>
                 <div class="col content-holder">
                     <div class="inline-block h-100">
-                        <ng-container *ngComponentOutlet="real_pannel"></ng-container>
+                        <ng-container *ngComponentOutlet="real_component"></ng-container>
                     </div>
                 </div>
         </div>
