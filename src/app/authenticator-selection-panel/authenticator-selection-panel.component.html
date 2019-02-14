@@ -1,1 +1,6 @@
-<app-auth-panel *ngFor="let pannel of pannels" [aval]="pannel.title" [real_component]="pannel.component" class="d-inline-flex justify-content-center" style="height: 380px; width: 350px; padding-left: 30px; padding-right: 30px"></app-auth-panel>
+<div *ngFor="let pannel of pannels" class="d-inline-block" style="margin-left: 30px;
+margin-right: 30px;
+height: 380px;
+width: 280px;">
+    <ng-container  *ngComponentOutlet="pannel"></ng-container>
+</div>

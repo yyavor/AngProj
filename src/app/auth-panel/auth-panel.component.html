@@ -1,12 +1,12 @@
 <div class="shadow-lg container-fluid">
         <div class="row">
-                <div class="col title-holder text-white">
-                  <span>{{aval}}</span>
+                <div class="col d-flex align-items-center title-holder text-white">
+                  <span>{{title}}</span>
                 </div>
                 <div class="w-100"></div>
                 <div class="col content-holder">
-                    <div class="inline-block h-100">
-                        <ng-container *ngComponentOutlet="real_component"></ng-container>
+                    <div class="inline-block d-flex align-items-center justify-content-center h-100 w-100">
+                        <ng-content></ng-content>
                     </div>
                 </div>
         </div>

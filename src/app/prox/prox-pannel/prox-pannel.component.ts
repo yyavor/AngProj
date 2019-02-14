@@ -6,7 +6,7 @@ import { Component, OnInit, Output } from '@angular/core';
   styleUrls: ['./prox-pannel.component.scss']
 })
 export class ProxPannelComponent implements OnInit {
-  @Output() header: string = "Tap your badge";
+  @Output() title:string = "Tap badge"
 
   constructor() { }
 

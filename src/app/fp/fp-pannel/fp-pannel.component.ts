@@ -6,12 +6,11 @@ import { Component, OnInit, Output } from '@angular/core';
   styleUrls: ['./fp-pannel.component.scss']
 })
 export class FpPannelComponent implements OnInit {
-  @Output() header: string = "124124";
+  @Output() title:string = "Place finger"
 
   constructor() { }
 
   ngOnInit() {
-    //this.header = "FPPPPP";
   }
 
 }

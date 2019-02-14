@@ -12,18 +12,9 @@ import { FpPannelComponent } from "../fp/fp-pannel/fp-pannel.component"
 })
 export class AuthenticatorSelectionPanelComponent implements OnInit {
   pannels: any[] = [
-    {
-      title: "Place your finger",
-      component: FpPannelComponent,
-    },
-    {
-      title: "Use your password",
-      component: PasswordPanelBaseComponent,
-    },
-    {
-      title: "Tap your card",
-      component: ProxPannelComponent,
-    },    
+      ProxPannelComponent,
+      PasswordPanelBaseComponent,
+      FpPannelComponent,
   ]; 
 
   constructor() { }
